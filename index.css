@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Sayfanın taşmasını engeller */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Üstten hizala */
+    height: 100vh; /* Tam ekran yüksekliği */
+    flex-direction: column; /* İçeriği dikey olarak hizalamak için */
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#welcome-screen {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Başlığın altında biraz boşluk bırak */
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Diğer stiller aynı kalabilir */
+#message-area {
+    height: 60vh; /* Mesaj alanının yüksekliği */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#input-area {
+    display: flex;
+    width: 100%;
+}
+
+#input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#input-area button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#logout-btn {
+    background-color: #ff4444;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #message-area {
+        height: 80vh; /* Daha büyük ekranlar için */
+    }
+}

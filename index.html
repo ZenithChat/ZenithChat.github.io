@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenithChat</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Karşılama Ekranı -->
+    <div id="welcome-screen">
+        <h1>ZenithChat Uygulamamıza Hoşgeldiniz</h1>
+        <input type="text" id="username" placeholder="Kullanıcı Adı Giriniz" />
+        <button id="join-btn" disabled>Katıl</button>
+    </div>
+
+    <!-- Mesajlaşma Ekranı -->
+    <div id="chat-screen" style="display:none;">
+        <h1>ZenithChat</h1>
+        <div id="message-area"></div>
+        <div id="input-area">
+            <input type="text" id="message-input" placeholder="Mesajınızı Yazın" />
+            <button id="send-btn">Gönder</button>
+        </div>
+        <button id="logout-btn">Hesaptan Çıkış Yap</button>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
